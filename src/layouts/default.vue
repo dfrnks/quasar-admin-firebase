@@ -3,7 +3,6 @@
     <q-layout-header>
       <q-toolbar
         color="primary"
-        :glossy="$q.theme === 'mat'"
         :inverted="$q.theme === 'ios'"
       >
         <q-btn
@@ -39,20 +38,16 @@
         </q-item>
         <q-item to="/users">
           <q-item-side icon="person" />
-          <q-item-main label="Users" sublabel="Cadastro de usuarios" />
+          <q-item-main label="Usuários" sublabel="Cadastro de usuarios" />
         </q-item>
-        <q-item @click.native="openURL('https://discord.gg/5TDhbDg')">
-          <q-item-side icon="chat" />
-          <q-item-main label="Discord Chat Channel" sublabel="https://discord.gg/5TDhbDg" />
+        <q-item to="/success">
+          <q-item-side icon="person" />
+          <q-item-main label="Perfil" sublabel="Perfil" />
         </q-item>
-        <q-item @click.native="openURL('http://forum.quasar-framework.org')">
-          <q-item-side icon="record_voice_over" />
-          <q-item-main label="Forum" sublabel="forum.quasar-framework.org" />
-        </q-item>
-        <q-item @click.native="openURL('https://twitter.com/quasarframework')">
-          <q-item-side icon="rss feed" />
-          <q-item-main label="Twitter" sublabel="@quasarframework" />
-        </q-item>
+        <!--<q-item @click.native="openURL('https://discord.gg/5TDhbDg')">-->
+          <!--<q-item-side icon="chat" />-->
+          <!--<q-item-main label="Discord Chat Channel" sublabel="https://discord.gg/5TDhbDg" />-->
+        <!--</q-item>-->
       </q-list>
     </q-layout-drawer>
 

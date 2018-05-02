@@ -7,11 +7,14 @@
   "author": "dfrnks <douglasfrancardoso@gmail.com>",
   "private": true,
   "scripts": {
+    "dev": "quasar dev -m pwa",
+    "build": "quasar build -m pwa",
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "firebaseui": "^2.7.0",
     "vue-i18n": "^7.3.3"
   },
   "devDependencies": {
