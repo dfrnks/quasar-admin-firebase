@@ -15,6 +15,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "firebaseui": "^2.7.0",
+    "font-awesome": "^4.7.0",
     "vue-i18n": "^7.3.3"
   },
   "devDependencies": {

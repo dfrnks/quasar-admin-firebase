@@ -17,7 +17,7 @@ module.exports = function (ctx) {
       'material-icons',
       // 'ionicons',
       // 'mdi',
-      // 'fontawesome'
+      'fontawesome',
     ],
     supportIE: false,
     vendor: {
@@ -62,6 +62,7 @@ module.exports = function (ctx) {
         'QItem',
         'QItemMain',
         'QItemSide',
+        'QTable',
       ],
       directives: [
         'Ripple',

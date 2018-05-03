@@ -2,6 +2,7 @@
 require('firebaseui/dist/firebaseui.css');
 
 import firebase from 'firebase';
+import 'firebase/firestore';
 
 // leave the export, even if you don't use it
 export default () => {
@@ -15,5 +16,7 @@ export default () => {
     messagingSenderId: '189929234958',
   };
   firebase.initializeApp(config);
-  // firebase.auth().signOut();
+  const settings = { timestampsInSnapshots: true };
+  firebase.firestore().settings(settings);
+  firebase.firestore().enablePersistence();
 };

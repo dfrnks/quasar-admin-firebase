@@ -22,10 +22,10 @@ export default [
     ],
   },
   {
-    path: '/Success',
+    path: '/account',
     component: () => import('layouts/default'),
     children: [
-      { path: '', component: () => import('pages/success') },
+      { path: '', component: () => import('pages/account') },
     ],
   },
   { // Always leave this as last one
