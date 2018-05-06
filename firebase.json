@@ -1,27 +1,31 @@
 {
-    "hosting": {
-        "public": "dist/pwa-mat",
-        "ignore": [
-            "firebase.json",
-            "**/.*",
-            "**/node_modules/**"
-        ],
+  "hosting": {
+    "public": "dist/pwa-mat",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "service-worker.js",
         "headers": [
-            {
-                "source": "service-worker.js",
-                "headers": [
-                    {
-                        "key": "Cache-Control",
-                        "value": "max-age=360"
-                    }
-                ]
-            }
-        ],
-        "rewrites": [
-            {
-                "source": "**",
-                "destination": "/index.html"
-            }
+          {
+            "key": "Cache-Control",
+            "value": "max-age=360"
+          }
         ]
-    }
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
 }

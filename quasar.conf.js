@@ -8,6 +8,7 @@ module.exports = function (ctx) {
       'firebase',
       'i18n',
       'axios',
+      'vuelidate',
     ],
     css: [
       'app.styl',
@@ -63,13 +64,19 @@ module.exports = function (ctx) {
         'QItemMain',
         'QItemSide',
         'QTable',
+        'QModal',
+        'QField',
+        'QInput',
+        'QToggle',
       ],
       directives: [
         'Ripple',
+        'CloseOverlay',
       ],
       // Quasar plugins
       plugins: [
         'Notify',
+        'Dialog',
       ],
       i18n: 'pt',
     },
